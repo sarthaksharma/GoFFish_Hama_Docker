@@ -64,3 +64,28 @@ Once the Swarm cluster is set up, use the [goffish_cluster.sh](https://github.co
 ./goffish_cluster.sh stop                               // To stop the Cluster
 
 ```
+
+
+# Executing a Sample GoFFish Example
+## 1. Log into the Master Node
+```
+
+./goffish_cluster.sh login
+
+```
+## 2. Load the Graphs to HDFS and view execution instructions
+
+It will show a list of algorithms available from the jar and list of available graphs from hdfs along with the instructions for execution.
+
+```
+goffish init
+
+```
+## 3. Run the sample GoFFish example from the List available to you
+```
+
+goffish run <Algorithm> <Graph>
+
+goffish run VertexCount /facebook-4P
+
+```
