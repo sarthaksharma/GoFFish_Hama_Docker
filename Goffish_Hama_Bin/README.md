@@ -24,9 +24,7 @@ Follow these steps to build and run the image
 # Running the GoFFish Hama Cluster
 
 You have several options to run this image:
-- Running nodes one by one
-
-- Running cluster on the local machine
+- Running nodes one by one on local machine
 
 - Running cluster on Docker Swarm Cluster
 
