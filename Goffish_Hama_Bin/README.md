@@ -1,6 +1,6 @@
 # GoFFish Hama Bin Docker
 
-The bin image is dependent on the base image, so make sure you've built or pulled the base image before you move on to bin. 
+The bin image contains the pre-built jar for GoFFish-Hama directly available for execution. It is dependent on the base image, so make sure you've built or pulled the base image before you move on to bin. 
 
 Follow these steps to build and run the image
 
@@ -84,6 +84,7 @@ goffish init
 
 goffish run <Algorithm> <Graph>
 
+Eg:
 goffish run VertexCount /facebook-4P
 
 ```
