@@ -1,6 +1,6 @@
 # GoFFish Hama Source Docker
 
-The source image is also dependent on the base image, so make sure you've built or pulled the base image before you move on to Source Docker. 
+Source image pulls the latest GoFFish-Hama repository and builds the jar on the go everytime we start the docker and initialise it using the **goffish init** command (explained below). It is also dependent on the base image, so make sure you've built or pulled the base image before you move on to Source Docker. 
 
 Follow these steps to build and run the image
 
@@ -82,9 +82,6 @@ goffish init
 ```
 ## 3. Run the sample GoFFish example from the List available to you
 ```
-
-goffish run <Algorithm> <Graph>
-
 goffish run VertexCount /facebook-4P
 
 ```
