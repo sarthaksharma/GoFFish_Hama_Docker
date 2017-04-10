@@ -81,11 +81,6 @@ goffish init
 ```
 ## 3. Run the sample GoFFish example from the List available to you
 ```
-
-goffish run <Algorithm> <Graph>
-
-Eg:
-
 goffish run VertexCount /facebook-4P
 
 ```
