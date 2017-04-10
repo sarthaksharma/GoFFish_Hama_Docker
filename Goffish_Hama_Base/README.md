@@ -4,7 +4,7 @@ This is the Base Image for GoFFish Hama Docker, on which the other images (i.e. 
 
 Follow these steps to build the image
 
-1. **Before you build, please download the foloowing: Oracle Java and Apache Hadoop.**
+1. **Before you build, please download the following: Oracle Java and Apache Hadoop.**
     
     ```
     git clone https://github.com/sarthaksharma/GoFFish_Hama_Docker
