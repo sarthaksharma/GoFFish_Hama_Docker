@@ -4,14 +4,13 @@ if [ $# -eq 0 ]; then
 elif [ $1 == "init" ]; then
 	hadoop dfsadmin -safemode leave
 	git clone https://github.com/dream-lab/goffish_v3
-	cd ./goffish_v3/api
+	cd ./goffish_v3/goffish-api
 	mvn clean install
 	cd ../sample
 	mvn clean install
 	cd ../hama/v3.1/
 	mvn clean install 
-	cd ..
-	cd ..
+	cd ../../
 	cp -t $HAMA_HOME/lib/ api/target/goffish-api-3.1.jar sample/target/goffish-sample-3.1.jar hama/v3.1/target/goffish-hama-3.1.jar	
         cp /goffish_v3/hama/v3.1/src/main/java/in/dream_lab/goffish/job/*.properties $HAMA_HOME/properties/
 
