@@ -61,8 +61,14 @@ Once the Swarm cluster is set up, use the [goffish_cluster.sh](https://github.co
 
 ./goffish_cluster.sh stop                               // To stop the Cluster
 
-```
 
+```
+Now we are ready to create an application private overlay network. Overlay network is the one that Docker will handle across distributed machines. It requires creating Consul or Zookeper to preserve state.
+
+```
+eval $(docker-machine env --swarm swarm-master)
+docker network create --driver overlay --subnet=10.0.9.0/24 appnet
+```
 
 # Executing a Sample GoFFish Example
 ## 1. Log into the Master Node
